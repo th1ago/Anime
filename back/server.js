@@ -10,11 +10,24 @@ server.use(express.static('public'))
 server.set("view engine", "njk")
 
 nunjucks.configure("views", {
-    express: server
+    express: server,
+    autoescape: false
 })
 
 server.get("/", function(req, res) {
-    return res.render("index")
+    const index = {
+        avatar_url:"",
+        name: "Vegeta ",
+        role: "Principe do planeta Vegeta",
+        description: "Personagem que demonstra seu poder atravez de bastante treinamentos e esforcos",
+        link: [
+            {name: "Github", url: "https://github.com/th1ago/"},
+            {name: "Facebook", url: "https://github.com/th1ago/"},
+            {name: "Linkedin", url: "https://github.com/th1ago/"}
+        ]
+    }
+
+    return res.render("index", {index})
 })
 
 server.get("/anime", function(req, res) {
