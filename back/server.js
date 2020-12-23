@@ -20,7 +20,7 @@ server.get("/", function(req, res) {
         avatar_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02hPpuOZnTphNKn3Fws3iug8jU-RgpC5AJw&usqp=CAU",
         name: "Vegeta ",
         role: "Principe do planeta Vegeta",
-        description: "Personagem que demonstra seu poder atravez de bastante treinamentos e esforcos",
+        description: "Personagem que demonstra seu poder através de bastante treinamentos e esforcos",
         link: [
             {name: "Github", url: "https://github.com/th1ago/"},
             {name: "Facebook", url: "https://github.com/th1ago/"},
@@ -35,9 +35,22 @@ server.get("/anime", function(req, res) {
     return res.render("anime", {items: videos})
 })
 
-// server.get("/img", function(req, res) {
-//     return res.render("vegeta")
-// })
+server.get("/video", function(req, res) {
+    const id = req.query.id
+
+    const video = videos.find(function(video) {
+        if (video.id == id) {
+            return true
+        }
+    })
+
+    if (!video) {
+        return res.send("video not found")
+    }
+
+    return res.render("video", {item: video})
+
+})
 
 server.listen(5000, function() {
     console.log("server run")

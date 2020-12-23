@@ -10,7 +10,6 @@ for (let card of cards) {
     })
 }
 
-
 // close the windows
 document.querySelector(".close-modal").addEventListener("click", function() {
     modalOverlay.classList.remove("active")
