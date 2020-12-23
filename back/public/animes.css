@@ -82,7 +82,7 @@ iframe{
 }
 
 /* feature */
-.card_image-container{
+.feature-wrapper .card_image-container{
     position: relative;
 }
 
