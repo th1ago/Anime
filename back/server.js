@@ -16,7 +16,7 @@ nunjucks.configure("views", {
 
 server.get("/", function(req, res) {
     const index = {
-        avatar_url:"https://avatars0.githubusercontent.com/u/11079167?s=460&u=21129c4df5552a5d149117ed085b0f117f9225f8&v=4",
+        avatar_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02hPpuOZnTphNKn3Fws3iug8jU-RgpC5AJw&usqp=CAU",
         name: "Vegeta ",
         role: "Principe do planeta Vegeta",
         description: "Personagem que demonstra seu poder atravez de bastante treinamentos e esforcos",

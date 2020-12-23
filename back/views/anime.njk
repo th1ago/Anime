@@ -16,6 +16,9 @@
         <div class="card" id="{{item.id}}">
             <div class="card_image-container">
                 <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="{{item.title}}">
+                {% if item.feature %}
+                    <div class="feature">feature</div>
+                {% endif %}
             </div>
             <div class="card_content">
                 <p>{{item.title}}</p>
@@ -27,72 +30,6 @@
         </div>
         {% endfor %}}
  
-        {# <div class="card" id="kqiTpgdvH1U">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/kqiTpgdvH1U/hqdefault.jpg" alt="SAO">
-            </div>
-            <div class="card_content">
-                <p>Swort Art Online</p>
-            </div>
-            <div class="card_info">
-                <p>30 sec</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="na541acj5oE">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/na541acj5oE/hqdefault.jpg" alt="SAO">
-            </div>
-            <div class="card_content">
-                <p>Swort Art Online</p>
-            </div>
-            <div class="card_info">
-                <p>30 sec</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="kqiTpgdvH1U">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/kqiTpgdvH1U/hqdefault.jpg" alt="SAO">
-            </div>
-            <div class="card_content">
-                <p>Swort Art Online</p>
-            </div>
-            <div class="card_info">
-                <p>30 sec</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="kqiTpgdvH1U">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/kqiTpgdvH1U/hqdefault.jpg" alt="SAO">
-            </div>
-            <div class="card_content">
-                <p>Swort Art Online</p>
-            </div>
-            <div class="card_info">
-                <p>30 sec</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="1z50Fe5ErtM">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/1z50Fe5ErtM/hqdefault.jpg" alt="SAO">
-                
-            </div>
-            <div class="card_content">
-                <p>Swort Art Online</p>
-            </div>
-            <div class="card_info">
-                <p>30 sec</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div> #}
-
     </section>
 
     <div class="modal-overlay">

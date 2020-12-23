@@ -3,7 +3,8 @@ module.exports = [
         id: "V-xwoj4vn6A",
         title: "Swort Art Online",
         duration: "30 sec",
-        price: "Free"
+        price: "Free",
+        feature: true,
     },
     {
         id: "kqiTpgdvH1U",
@@ -15,13 +16,15 @@ module.exports = [
         id: "na541acj5oE",
         title: "Swort Art Online",
         duration: "30 sec",
-        price: "Free"
+        price: "Free",
+        feature: true
     },
     {
         id: "kqiTpgdvH1U",
         title: "Swort Art Online",
         duration: "30 sec",
-        price: "Free"
+        price: "Free",
+        feature: true
     },
     {
         id: "kqiTpgdvH1U",
